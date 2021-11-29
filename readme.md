@@ -1,4 +1,4 @@
-# &#128512; Gotham city
+# &#128512; Ici le portfolio de Sir Nikita
 
 Application web sur Gotham
 ``` html 
@@ -8,7 +8,7 @@ Application web sur Gotham
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gotam city</title>
+    <title>Nikita UEMLYANIN</title>
 </head>
 <body>
     
@@ -22,4 +22,4 @@ Application web sur Gotham
 * index.html
 * css/style.css
 * asset/
-* [E-mail](mailto:clement.arki@hotmail.fr)
+* [E-mail](nikita.uemlyanin.bts@gmail.com)
