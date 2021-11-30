@@ -48,7 +48,7 @@ nav{
     margin: 0rem auto 0rem;
     max-width: 100rem;
     background-color: rosybrown;
-    padding: 5rem;
+    padding: 0.5rem;
 }
 
 nav ul li{
@@ -59,8 +59,9 @@ header{
     background-color: #109bdb;
     border: solid #fff;
     line-height: 6.0rem;
-    max-width: 100rem;
-    margin: 5.0rem auto 0rem;  /*centre le block de main */
+    max-width: 110rem;
+    margin: 0rem auto 0rem;  /*centre le block de main */
+    padding: 1rem;
     display: block;
 }
 section{
@@ -71,7 +72,7 @@ section{
 }
 main{
     max-width: 100rem;
-    margin: 5.0rem auto;  /*centre le block de main */
+    margin: 0rem auto;  /*centre le block de main */
     overflow: hidden;  /* met footer en bas et redresse l'image */
 }
 main ul li img{
