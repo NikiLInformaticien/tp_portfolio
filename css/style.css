@@ -10,19 +10,25 @@ body{
     font: 1.6rem sans-serif; /* 16px */
     margin: 0;  
 }
-h1,h2,h3,h4,p,ol,ul,li,figure,dd{
+h1,h2,h3,h4,p,ol,ul,li,figure,dd, a{
     margin: 0;
     padding: 0;
     list-style-type: none;
+    text-decoration: none;
 }
 h1,h2,h3,h4{
     font-weight: normal;
 }
 
-/* theme */
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                                                
+                                                    Theme
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 /* Palette graphique */
 :root{
-    --color-default: rgb(0,0,0);
+    --color-html: rgb(70, 1, 148);
     --color-header-text: #fff;
     --color-primary: #5298c6;
     --color-alert: #c0392b;
@@ -30,29 +36,50 @@ h1,h2,h3,h4{
     --color-warning: rgba(253, 203, 110,1.0);
 }
 /* variable appelée */
+/*Theme*/
+html{
+    background-color: var(--color-html);
+}
+main{
+    border: solid #222;
+    background-color: #fff;
+}
+nav{
+    margin: 0rem auto 0rem;
+    max-width: 100rem;
+    background-color: rosybrown;
+    padding: 5rem;
+}
+
+nav ul li{
+    display: inline-block;
+    
+}
 header{
+    background-color: #109bdb;
+    border: solid #fff;
     line-height: 6.0rem;
     max-width: 100rem;
-    margin: 5.0rem auto;  /*centre le block de main */
+    margin: 5.0rem auto 0rem;  /*centre le block de main */
+    display: block;
+}
+section{
+    display: block;
+    border: solid red 0.5rem;
+    margin: 5rem;
 }
 main{
     max-width: 100rem;
     margin: 5.0rem auto;  /*centre le block de main */
     overflow: hidden;  /* met footer en bas et redresse l'image */
 }
-main ul{   /*regler les marges et padding */
-    padding: 0.5rem 0 0 0.5rem; /* Haut bas droite gauche */
-}
 main ul li img{
     display: block;
     width: 100%;
 }
-main ul li{    /*ajouter un display : inline-block */
-    display: block;
-    width: calc(100% / 2 - 1.0rem);  /* met les images en petits et calculer la taille */
-    float: left;
-    margin: 0 1.0rem 1.0rem 0; 
-}
-main ul li:last-child{   /*ligne avec une image */
-    width: calc(100% / 1 - 1.0rem);  /*met l'image en plus grand et donne toute la ligne*/
+main ul{
+    padding: 1.0rem;
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);         /*diplay grid mets en cases / 1fr=fraction en 4*/
+    grid-gap: 1rem;     /* écarte les images de 1rem */
 }
