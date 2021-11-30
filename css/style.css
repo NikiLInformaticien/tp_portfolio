@@ -32,7 +32,27 @@ h1,h2,h3,h4{
 /* variable appelée */
 header{
     line-height: 6.0rem;
+    max-width: 100rem;
+    margin: 5.0rem auto;  /*centre le block de main */
 }
-header h2{
-    content:"U+1F601";
+main{
+    max-width: 100rem;
+    margin: 5.0rem auto;  /*centre le block de main */
+    overflow: hidden;  /* met footer en bas et redresse l'image */
+}
+main ul{   /*regler les marges et padding */
+    padding: 0.5rem 0 0 0.5rem; /* Haut bas droite gauche */
+}
+main ul li img{
+    display: block;
+    width: 100%;
+}
+main ul li{    /*ajouter un display : inline-block */
+    display: block;
+    width: calc(100% / 2 - 1.0rem);  /* met les images en petits et calculer la taille */
+    float: left;
+    margin: 0 1.0rem 1.0rem 0; 
+}
+main ul li:last-child{   /*ligne avec une image */
+    width: calc(100% / 1 - 1.0rem);  /*met l'image en plus grand et donne toute la ligne*/
 }
