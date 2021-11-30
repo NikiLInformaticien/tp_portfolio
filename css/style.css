@@ -86,11 +86,26 @@ main ul{
     grid-template-columns:repeat(2, 1fr);         /*diplay grid mets en cases / 1fr=fraction en 4*/
     grid-gap: 1rem;     /* écarte les images de 1rem */
 }
-section:nth-child(3) figure img:first-child{
+section:first-child img{
+    display: block;
+    float: left;
+    max-width: 100%;
+    width: 20%;
+}
+
+section:nth-child(3) img:first-child{
     max-width: 30%;
     display: block;
     float: right;
 }
-section:nth-child(3) figure img:last-child{
+section:nth-child(3) p{
+    display: block;
+    float: right;
+    width: 20rem;
+    height: 20rem;
+}
+
+section:nth-child(3) img:last-child{
     max-width: 100%;
+
 }
