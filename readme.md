@@ -1,6 +1,6 @@
-# &#128512; Gotham city
+# &#128512; NikiLInformaticien Website
 
-Application web sur Gotham
+Application web de mon portfolio
 ``` html 
 <!DOCTYPE html>
 <html lang="fr">
@@ -22,4 +22,4 @@ Application web sur Gotham
 * index.html
 * css/style.css
 * asset/
-* [E-mail](mailto:clement.arki@hotmail.fr)
+* [E-mail](mailto:nikita.uemlyanin.bts@gmail.com)
