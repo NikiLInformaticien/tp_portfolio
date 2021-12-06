@@ -33,8 +33,8 @@ h1,h2,h3,h4{
     --color-html:rgba(65, 165, 123, 0.918);
     --color-screen_border: #11585c;
     --color-header-text: #fff;
-    --color-primary: #5298c6;
-    --color-alert: #c0392b;
+    --color-nav: rgba(214, 221, 221, 1);
+    --color-header_footer: rgba(214, 221, 221, 0.5);
     --color-success: #068a22;
     --color-warning: rgba(253, 203, 110,1.0);
 }
@@ -80,7 +80,7 @@ nav{
     border: solid #222 2px;
     margin: 0rem auto 1rem;
     max-width: 110rem;
-    background-color: rgba(214, 221, 221, 1);
+    background-color: var(--color-nav);
     padding: 0.5rem;
     font: 1.6rem 'Irish Grover', sans-serif;
 }
@@ -125,26 +125,45 @@ section h2{
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
                                                     Section 1
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
-section:first-child ul{
+section:first-child h2{
+    margin-top: 0;
+}
+section:first-child p{
+    display: block;
+    float: right;
+    margin-top: 2rem;
+    margin-right: 4rem;
+    text-align: center;
+}
+section:first-child p img{
+    display: block;
+    max-width: 100%;
+    width: 20%;
+    float: left;
+    margin: 0rem 4rem 0 2rem;
+    border: solid var(--color-screen_border) 2px;
+}
+/*section:first-child ul{
     display: grid;
     grid-template-columns:repeat(2, 1fr);
     gap: 4rem;
-    margin-right: 10rem;
+    /*margin-right: 5rem;*/
 
     
         
-}
+/*}
 section:first-child ul li p{
     padding-top: 2rem;
     margin-right: 6rem;
 }
 section:first-child  img{
-    max-width: 100%;
-    width: 70%;
-    border: solid 2px var(--color-screen_border);
+  
+    width:50%;
     margin-top: 2rem;
-    margin-left: 1rem;
-}
+    margin-left: 3rem;
+    
+   
+}*/
 
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
                                                     Section 1
@@ -153,7 +172,10 @@ section:first-child  img{
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
                                                     Section 2
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
-section:nth-child(3) h3{
+section:nth-child(2) h2{
+    margin-top: 0;
+}
+section:nth-child(2) h3{
     text-align: center;
 }
 section:nth-child(2) p{
@@ -307,4 +329,20 @@ section:last-child figure img{
 }
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
                                                     Section 7
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                                                    Footer
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+footer{
+    width: 80rem;
+    margin: 2rem auto 4rem;
+    background-color: var(--color-header_footer);
+    text-align: center;
+    border: solid #222 1px;
+}
+
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                                                    Footer
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
