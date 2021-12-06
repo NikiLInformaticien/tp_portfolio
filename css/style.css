@@ -118,7 +118,9 @@ main ul li img{
 h1,h2,h3{
     text-transform: uppercase;
 }
-
+section h2{
+    margin-top: 2rem;
+}
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
                                               Paramètres de la page
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
@@ -143,7 +145,7 @@ section:first-child p{
     padding: 0 5rem 0rem 2rem;
     display: block;
     padding-top: 0.5rem;
-    
+
     overflow:auto;
 }
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -156,17 +158,22 @@ section:nth-child(2) h2{
     text-align: center;
 }
 section:nth-child(2) h3{
+    margin-top: 2rem;
     margin-left: 2rem;
 }
 
 section:nth-child(2) ul{
-    margin: 2rem;
+    margin: 4rem;
     border: solid #222;
     padding: 1rem;
     display:grid;
     grid-template-columns:repeat(2, 1fr);         /*diplay grid mets en cases / 1fr=fraction en 4*/
     grid-gap: 1rem;     /* écarte les images de 1rem */
     background-color: var(--color-screen_border);
+}
+section:nth-child(2) ul li img{
+    max-width: 100%;
+    
 }
 section:nth-child(2) p{
     margin: 0rem auto 0rem;
@@ -241,20 +248,19 @@ section:nth-child(3) figure img{
 section:last-child h2{
     text-align: center;
 }
-section:last-child p img{
-    padding: 0 7rem 0 3rem;
-    display: inline;
-    float: right;
-    max-width: 100%;
-    width: 55%;
-}
-section:last-child p{
-    margin-right: 10rem;
-    padding: 0 20rem 3rem 0.5rem;
+section:last-child figure {
+    
     display: block;
-    padding-top: 5rem;
-    margin-left: 0px;
-    overflow:auto;
+    text-align: center;
+    margin: 0 auto 0;
+}
+section:last-child figure p{
+    margin-top: 2rem;   
+}
+section:last-child figure img{
+    margin-top: 2rem;
+    max-width: 100%;
+    width: 60%;
 }
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
                                                     Section 4
