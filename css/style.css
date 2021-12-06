@@ -30,8 +30,8 @@ h1,h2,h3,h4{
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 /* Palette graphique */
 :root{
-    --color-html:rgba(84, 216, 161, 0.918);
-    --color-screen_border: #16797f;
+    --color-html:rgba(65, 165, 123, 0.918);
+    --color-screen_border: #11585c;
     --color-header-text: #fff;
     --color-primary: #5298c6;
     --color-alert: #c0392b;
@@ -44,19 +44,23 @@ html{
     /*background-color: var(--color-html);*/
     background:#ccc url('http://fc01.deviantart.net/fs70/f/2011/057/f/b/dr_lab_2_with_the_tube_by_nerdmaso-d3afg7d.jpg') no-repeat fixed center center / cover;
 }
-/*main{
+main{
     border: solid #222 2px;
     border: solid var(--color-screen_border) 0.5rem;
     background-color: var(--color-html);
-}*/
+    
+}
+
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
                                                 Barre de navigation
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 nav{
+    border: solid #222 2px;
     margin: 0rem auto 0rem;
     max-width: 100rem;
-    background-color: rosybrown;
+    background-color: rgba(214, 221, 221, 1);
     padding: 0.5rem;
+    font: 1.6rem 'Irish Grover', sans-serif;
 }
 
 nav ul li{
@@ -74,17 +78,19 @@ nav ul li{
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 header{
     font-family: 'Eater', cursive;
-    background-color: #109bdb;
+    background-color: rgba(214, 221, 221, 0.5);
     border: solid #fff;
     line-height: 6.0rem;
     max-width: 110rem;
     margin: 0rem auto 0rem;  /*centre le block de main */
-    padding: 1rem;
+    padding: 0rem;
     display: block;
 }
 header h1{
     text-align: center;
+    
 }
+
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
                                                    Header
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
@@ -96,11 +102,12 @@ header h1{
 section{
     display: block;
     /*border: solid red 0.5rem;*/
-    margin: 5rem;
+    margin: 2rem;
     overflow: hidden;
+    font: 1.6rem 'Irish Grover', sans-serif;
 }
 main{
-    max-width: 100rem;
+    max-width: 70rem;
     margin: 0rem auto;  /*centre le block de main */
     overflow: hidden;  /* met footer en bas et redresse l'image */
 }
@@ -123,18 +130,18 @@ section:first-child h2{
     text-align: center;
 }
 section:first-child p img{
-    padding: 0 7rem 0 3rem;
+    padding: 0 3rem 0 0.5rem;
     display: inline;
     float: left;
     max-width: 100%;
     width: 35%;
 }
 section:first-child p{
-    margin-right: 20rem;
-    padding: 0 20rem 3rem 0.5rem;
+    margin-right: 0rem auto 0rem;
+    padding: 0 5rem 0rem 2rem;
     display: block;
-    padding-top: 5rem;
-    margin-left: 0px;
+    padding-top: 0.5rem;
+    
     overflow:auto;
 }
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -150,40 +157,44 @@ section:nth-child(2) h3{
     margin-left: 2rem;
 }
 section:nth-child(2) p{
-    margin: 0.5rem 3rem 0 3rem;
+    margin-right: 3rem;
+    padding: 0 20rem 3rem 0.5rem;
     display: block;
+    padding-top: 1rem;
+    margin-left: 0px;
+    overflow:auto;
 }
 section:nth-child(2) ul{
     margin: 2rem;
     border: solid #222;
-    padding: 0.5rem;
+    padding: 1rem;
     display:grid;
     grid-template-columns:repeat(2, 1fr);         /*diplay grid mets en cases / 1fr=fraction en 4*/
     grid-gap: 1rem;     /* écarte les images de 1rem */
+    background-color: var(--color-screen_border);
+}
+section:nth-child(2) p:last-child{
+    margin: 0rem auto 0rem;
+    padding: 0 5rem 0rem 2rem;
+    display: block;
+    padding-top: 0.5rem;
+    
+    overflow:auto;
+}
+section:nth-child(2) p:last-child img{
+    max-width: 100%;
+    width: 50%;
+    padding: 0 3rem 0 0.5rem;
+    display: inline;
+    float: left;
+    
 }
 
 
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
                                                     Section 2
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
-section:nth-child(2) h2{
-    text-align: center;
-}
-section:nth-child(2) p img{
-    padding: 0 7rem 0 3rem;
-    display: inline;
-    float: left;
-    max-width: 100%;
-    width: 35%;
-}
-section:nth-child(2) p{
-    margin-right: 20rem;
-    padding: 0 20rem 3rem 0.5rem;
-    display: block;
-    padding-top: 5rem;
-    margin-left: 0px;
-    overflow:auto;
-}
+
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
                                                     Section 3
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
