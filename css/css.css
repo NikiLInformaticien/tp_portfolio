@@ -175,16 +175,6 @@ section:first-child  img{
 section:nth-child(2) h2{
     margin-top: 0;
 }
-section:nth-child(2) h3{
-    text-align: center;
-}
-section:nth-child(2) p{
-    margin: 0rem auto 0rem;
-    padding: 0 5rem 0rem 2.5rem;
-    display: block;
-    margin-bottom: 2rem;
-    overflow:auto;
-}
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
                                                     Section 2
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
@@ -193,6 +183,11 @@ section:nth-child(2) p{
                                                     Section 3
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 
+section:nth-child(3) h3{
+    margin-left: 2rem;
+}section:nth-child(3) p{
+    margin-left: 2rem;
+}
 
 section:nth-child(3) ul{
     display: grid;
@@ -231,10 +226,11 @@ section:nth-child(4) ul{
     margin-left: 4rem;
     
 }
-section:nth-child(4)  img{
+section:nth-child(4) ul li img{
     max-width: 100%;
     width: 80%;
     border: solid 2px var(--color-screen_border);
+    margin-left: 4rem;
 }
 section:nth-child(4) li h3{
     padding-top: 1rem;
@@ -340,9 +336,55 @@ footer{
     background-color: var(--color-header_footer);
     text-align: center;
     border: solid #222 1px;
+    overflow: hidden;
 }
 
 
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
                                                     Footer
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+
+
+@media screen and (max-width:70.0rem){   /* en format normal portable */
+
+    main{
+        width: 35rem;
+    }
+    header, body nav, footer{
+        width: 35rem;
+    }
+    header {
+        height: 7rem;
+    }
+    header h1{
+        font-size: large;
+    }
+
+    section:first-child h2{
+        margin-bottom: 2rem;
+    }
+    section:first-child p{
+        margin: 0 auto 0 ;
+        text-align: center;
+    }
+    section:first-child p img{
+        display: block;
+        width: 50%;
+        float: none;
+        margin-bottom: 2rem;
+        margin-left: 8rem;
+    }
+    footer{
+        display: grid;
+        align-items:center;  /*met au milieu le copyright */
+    }
+
+}
+
+@media screen and (orientation:landscape){ /* format paysage */
+    header h1{ 
+        font-size: xx-large;
+  
+    }
+}
