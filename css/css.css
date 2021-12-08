@@ -375,6 +375,13 @@ footer{
         margin-bottom: 2rem;
         margin-left: 8rem;
     }
+    section:nth-child(3) ul{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    section:nth-child(4) ul{
+        
+    }
     footer{
         display: grid;
         align-items:center;  /*met au milieu le copyright */
