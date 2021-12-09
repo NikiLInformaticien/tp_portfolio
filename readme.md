@@ -1,6 +1,6 @@
 # &#128512; NikiLInformaticien Website
 
-https://nikilinformaticien.github.io/tp_portfolio/
+Ce site est hébergé sur github: https://nikilinformaticien.github.io/tp_portfolio/
 
 Application web de mon portfolio
 ``` html 
