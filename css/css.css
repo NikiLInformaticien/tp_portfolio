@@ -393,13 +393,14 @@ footer{
     section:nth-child(5) ul{
         display: flex;
         flex-direction: column;
+        margin-left: 20px;
     }
     section:nth-child(5) ul li:first-child{
         order: 2;
     }
     section:nth-child(5) ul li:first-child img{
         width: 87%;
-        margin-right: 2rem;
+        margin-left: 2rem;
     }
     section:nth-child(5) ul li:last-child{
         order: 1;
