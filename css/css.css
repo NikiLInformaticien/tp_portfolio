@@ -380,7 +380,15 @@ footer{
         margin-right: 15px;
     }
     section:nth-child(4) ul{
-        
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+    section:nth-child(4) ul li:first-child p{
+        padding-bottom: 2rem;
+    }
+    section:nth-child(4) ul li:last-child img{
+        margin-left: 20px;
     }
     footer{
         display: grid;
