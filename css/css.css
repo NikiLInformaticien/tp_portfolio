@@ -390,6 +390,22 @@ footer{
     section:nth-child(4) ul li:last-child img{
         margin-left: 20px;
     }
+    section:nth-child(5) ul{
+        display: flex;
+        flex-direction: column;
+    }
+    section:nth-child(5) ul li:first-child{
+        order: 2;
+    }
+    section:nth-child(5) ul li:first-child img{
+        width: 87%;
+        margin-right: 2rem;
+    }
+    section:nth-child(5) ul li:last-child{
+        order: 1;
+        padding-bottom: 2rem;
+    }
+
     footer{
         display: grid;
         align-items:center;  /*met au milieu le copyright */
