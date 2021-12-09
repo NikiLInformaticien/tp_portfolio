@@ -405,6 +405,26 @@ footer{
         order: 1;
         padding-bottom: 2rem;
     }
+    section:nth-child(6) p{
+        padding-top: 2rem;
+    }
+    section:nth-child(6) p img{
+        max-width: 60%;
+        width: auto;
+        
+    }
+    section:nth-child(6) figure img{
+        width: auto;
+    }
+    section:nth-child(7) h2{
+        margin-bottom: 2rem;
+    }
+    section:nth-child(7) figure img{
+        width: auto;
+    }
+    section:nth-child(7) figure figcaption p{
+        margin-top: 0;
+    }
 
     footer{
         display: grid;
