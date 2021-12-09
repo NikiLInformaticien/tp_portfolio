@@ -86,6 +86,7 @@ nav{
 }
 nav ul li a{
     text-decoration: none;
+    font: #551a8b;
 }
 
 nav ul li{
