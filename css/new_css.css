@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Eater&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+/* 
+reset css
+tailles, marges, padding, link
+*/
+
+html{ /* sélecteur propriété valeur */
+    font-size: 62.5%;  /* 1.000rem root em 10px */
+}
+body{
+    font: 1.6rem sans-serif; /* 16px */
+    margin: 0;  
+}
+h1,h2,h3,h4,p,ol,ul,li,figure,dd,a{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+h1,h2,h3,h4{
+    font-weight: normal;
+}*{
+    box-sizing: border-box;
+}
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                                                
+                                                    Theme
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* Palette graphique */
+:root{
+    --color-html:rgba(65, 165, 123, 0.918);
+    --color-screen_border: #11585c;
+    --color-header-text: #fff;
+    --color-nav: rgba(214, 221, 221, 1);
+    --color-header_footer: rgba(214, 221, 221, 0.5);
+    --color-success: #068a22;
+    --color-warning: rgba(253, 203, 110,1.0);
+}
+/* variable appelée */
+/*Theme*/
+html{
+    /*background-color: var(--color-html);*/
+    background:#ccc url('../assets/bg.jpg') no-repeat fixed center center / cover;
+}
+main{
+    border: solid #222 2px;
+    border: solid var(--color-screen_border) 0.5rem;
+    background-color: var(--color-html);
+    
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                                                   Header
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+header{
+    font-family: 'Eater', cursive;
+    background-color: rgba(214, 221, 221, 0.5);
+    border: solid #fff;
+    line-height: 6.0rem;
+    max-width: 110rem;
+    margin: 0rem auto 1rem;  /*centre le block de main */
+    padding: 0rem;
+    display: block;
+}
+header h1{
+    text-align: center;
+    
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                                                   Header
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                                                Barre de navigation
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+nav{
+    border: solid #222 2px;
+    margin: 0rem auto 1rem;
+    max-width: 110rem;
+    background-color: var(--color-nav);
+    padding: 0.5rem;
+    font: 1.6rem 'Irish Grover', sans-serif;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #222222;
+}
+
+nav ul li{
+    display: inline-block;
+    
+}
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                                                Barre de navigation
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                                              Paramètres de la page
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+section{
+    display: block;
+    /*border: solid red 0.5rem;*/
+    margin: 2rem;
+    overflow: hidden;
+    font: 1.6rem 'Irish Grover', sans-serif;
+}
+main, footer{
+    max-width: 70rem;
+    margin: 0rem auto 3rem;  /*centre le block de main */
+    overflow: hidden;  /* met footer en bas et redresse l'image */
+}
+main ul li img{
+    display: block;
+    width: 100%;
+}
+h1,h2,h3{
+    text-transform: uppercase;
+}
+section h2{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                                              Paramètres de la page
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                                                    Section 1
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+section:first-child h2{
+    margin-top: 0;
+}
+section:first-child p{
+    display: block;
+    float: right;
+    margin-top: 2rem;
+    margin-right: 4rem;
+    text-align: center;
+}
+section:first-child p img{
+    display: block;
+    max-width: 100%;
+    width: 20%;
+    float: left;
+    margin: 0rem auto 2rem auto;
+    border: solid var(--color-screen_border) 2px;
+}
+/*section:first-child ul{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap: 4rem;
+    /*margin-right: 5rem;*/
+
+    
+        
+/*}
+section:first-child ul li p{
+    padding-top: 2rem;
+    margin-right: 6rem;
+}
+section:first-child  img{
+  
+    width:50%;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    
+   
+}*/
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                                                    Section 1
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                                                    Section 2
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+section:nth-child(2) h2{
+    margin-top: 0;
+}
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                                                    Section 2
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                                                    Section 3
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+section:nth-child(3) h3{
+    margin-left: 2rem;
+}section:nth-child(3) p{
+    margin-left: 2rem;
+}
+
+section:nth-child(3) ul{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-column-start: 1;
+    grid-row-start: 2;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    background-color: var(--color-screen_border);
+    margin: 0 auto 0;
+    margin-top: 2rem;    
+    margin: 2rem 4rem 0 4rem;
+    
+}
+section:nth-child(3) li img{
+    max-width: 100%;
+    width: 100%;
+    background-color: var(--color-screen_border);
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                                                    Section 3
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                                                    Section 4
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+
+section:nth-child(4) ul{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-row-end: 2;
+    grid-row-end: 1;
+    gap: 0rem;
+    margin-left: 4rem;
+    
+}
+section:nth-child(4) ul li img{
+    max-width: 100%;
+    width: 80%;
+    border: solid 2px var(--color-screen_border);
+    margin-left: 4rem;
+}
+section:nth-child(4) li h3{
+    padding-top: 1rem;
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                                                    Section 4
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                                                    Section 5
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+   
+
+section:nth-child(5) ul{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap: 0rem;
+    margin-left: 4rem;
+    
+}
+section:nth-child(5)  img{
+    max-width: 100%;
+    width: 80%;
+    border: solid 2px var(--color-screen_border);
+}
+section:nth-child(5) li h3{
+    padding-top: 1rem;
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                                                    Section 5
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                                                    Section 6
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+section:nth-child(6) p{
+    margin: 0rem auto 0rem;
+    padding: 0 5rem 0rem 2rem;
+    display: block;
+    padding-top: 0.5rem;
+    margin-bottom: 2rem;
+    overflow:auto;
+}
+section:nth-child(6) p img{
+    max-width: 100%;
+    width: 30%;
+    padding: 0 3rem 0 0.5rem;
+    display: inline;
+    float: left;
+}
+
+section:nth-child(6) figure {
+    display: block;
+    text-align: center;
+    margin: 0 auto 0;
+}
+section:nth-child(6) figure img{
+    max-width: 100%;
+    width: 60%;
+    border: solid var(--color-screen_border) 2px ;
+}
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                                                    Section 6
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                                                    Section 7
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+section:last-child h2{
+    text-align: center;
+}
+section:last-child figure {
+    
+    display: block;
+    text-align: center;
+    margin: 0 auto 0;
+}
+section:last-child figure p{
+    margin-top: 2rem;   
+}
+section:last-child figure img{
+    margin-top: 2rem;
+    max-width: 100%;
+    width: 60%;
+    border: solid var(--color-screen_border) 2px ;
+}
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                                                    Section 7
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                                                    Footer
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+footer{
+    /*width: 80rem;
+    margin: 2rem auto 4rem;*/
+    background-color: var(--color-header_footer);
+    text-align: center;
+    border: solid #222 1px;
+    overflow: hidden;
+}
+
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                                                    Footer
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+
+
+@media screen and (max-width:80.0rem){   /* en format normal portable */
+
+    /*main{
+        width: 35rem;
+    }*/
+    main, footer {
+        margin: 0 auto;
+        max-width: 115rem;  /* adaptée pour Ipad */
+    }
+    main section h2{
+        margin: 0;
+    }
+
+    main section h2{
+        margin: 0;
+    }
+
+/*
+    header, body nav, footer{
+        width: 35rem;
+    }*//*
+    header {
+        height: auto;
+        width: auto;
+        max-width: 35rem;
+    }*/
+    header h1{
+        margin: 0rem auto;
+        font-size: large;
+        line-height: 3.5rem;
+    }
+
+    nav ul{
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    section:first-child h2{
+        margin-bottom: 2rem;
+    }
+    section:first-child p{
+        margin: 0 auto 0 ;
+        text-align: center;
+    }
+    section:first-child p img{
+        display: block;
+        width: 50%;
+        float: none;
+    }
+    section:nth-child(3) ul{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    section:nth-child(4) ul{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+    section:nth-child(4) ul li:first-child p{
+        padding-bottom: 2rem;
+    }
+    section:nth-child(4) ul li:last-child img{
+        margin-left: 20px;
+    }
+    section:nth-child(5) ul{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+    section:nth-child(5) ul li:first-child{
+        order: 2;
+    }
+    section:nth-child(5) ul li:first-child img{
+        width: 87%;
+        margin-left: 2rem;
+    }
+    section:nth-child(5) ul li:last-child{
+        order: 1;
+        padding-bottom: 2rem;
+    }
+    section:nth-child(6) p{
+        padding-top: 2rem;
+    }
+    section:nth-child(6) p img{
+        max-width: 60%;
+        width: auto;
+        
+    }
+    section:nth-child(6) figure img{
+        width: auto;
+    }
+    section:nth-child(7) h2{
+        margin-bottom: 2rem;
+    }
+    section:nth-child(7) figure img{
+        width: auto;
+    }
+    section:nth-child(7) figure figcaption p{
+        margin-top: 0;
+    }
+
+    footer{
+        display: grid;
+        height: 10vh;   
+        align-items:center;  /*met au milieu le copyright */
+        font-size: small;
+    }
+
+}
+
+@media screen and (orientation:landscape){ /* format paysage */
+    header{
+        padding: auto auto auto;
+    } 
+    header h1{ 
+        font-size: xx-large;
+
+  
+    }
+}
