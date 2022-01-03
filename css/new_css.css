@@ -56,7 +56,7 @@ main{
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 header{
     font-family: 'Eater', cursive;
-    background-color: rgba(214, 221, 221, 0.5);
+    background-color: rgba(214, 221, 221, 1);
     border: solid #fff;
     line-height: 6.0rem;
     max-width: 110rem;
